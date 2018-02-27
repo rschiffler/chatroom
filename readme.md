@@ -1,13 +1,13 @@
-This is a sample project with the goal of better learning and the following technologies: 
+This is a sample project with the goal of better learning the following technologies:<br>
 `react` `sass` `webpack` `redux`
 
-## Available Scripts
+## Running the application
 
-To begin, in the root of the site run:
+In the root of the site start by running:
 
 ### `npm install`
 
-Once all the dependencies have been installed you can run:
+Once all the dependencies have been installed run:
 
 ### `npm start`
 
