@@ -1,0 +1,16 @@
+.ChatRoom {
+    display: flex;
+    height: 500px;
+
+    &__users,
+    &__messages {
+        border: solid 1px navy;
+    }
+
+    &__users {
+        flex: 1;
+    }
+    &__messages {
+        flex: 2;
+    }
+}
