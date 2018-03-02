@@ -59,4 +59,5 @@ typings/
 
 # build files
 public/**/*.js
+public/**/*.js.map
 
