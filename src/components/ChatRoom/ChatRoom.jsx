@@ -11,7 +11,7 @@ export default class ChatRoom extends React.Component {
     return (
      <div className="ChatRoom">
         <div className="ChatRoom__users">
-          {/* todo: output message from the store */}
+          {this.props.store.getState()}
         </div>
         <div className="ChatRoom__messages">
           <MessageBox />
