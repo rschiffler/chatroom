@@ -1,0 +1,25 @@
+.MessageBox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    label {
+        float: left;
+        line-height: 41px;
+        height: 41px;
+        width: 15%;
+        box-sizing: border-box;
+    }
+
+    input[type=text] {
+        width: 65%;
+        height: 41px;
+        line-height: 41px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        box-sizing: border-box;
+    }
+}
