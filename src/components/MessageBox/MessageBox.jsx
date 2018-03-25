@@ -1,5 +1,5 @@
 import React from 'react';
-import { addMessage } from '../../Redux/actions'
+import { addMessage } from '../../actions/actions'
 
 // Styles
 import styles from './MessageBox.scss';
