@@ -6,8 +6,9 @@ import ChatRoom from '../components/ChatRoom/ChatRoom.jsx';
 
 export default class MessagesPage extends React.Component {
     render() {
+        console.log(this.props);
         return(
-            <ChatRoom />
+            <ChatRoom store={this.props.store} />
         )
 	}
 }
