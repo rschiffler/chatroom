@@ -1,0 +1,30 @@
+@import "../../css/base.scss";
+
+.MessageFeed {
+	padding: 10px;
+	margin-bottom: 62px;
+
+	&__text {
+		background-color: $message-box-green;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px;
+		position: relative;
+		
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -10px;
+			width: 0;
+			height: 0;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 15px solid $message-box-green;
+		}
+	}
+
+	&__date {
+		color: $light-gray;
+	}
+}

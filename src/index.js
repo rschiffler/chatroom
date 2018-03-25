@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChatRoom from './components/ChatRoom/ChatRoom.jsx';
+import ChatRoomApp from './ChatRoomApp.jsx';
 import { createStore } from 'redux';
-import chatRoomApp from './Redux/reducers';
- 
+import chatRoomApp from './reducers/reducers';
+
 let store = createStore(chatRoomApp)
 
-ReactDOM.render(<ChatRoom store={store} />, document.getElementById('root'));
+ReactDOM.render(<ChatRoomApp store={store} />, document.getElementById('root'));
