@@ -1,0 +1,25 @@
+@import '../../css/base.scss';
+
+.Tabs {
+    &__button {
+        width: 50%;
+		height: 50px;
+		background-color: $unselected-button;
+		border: none;
+		cursor: pointer;
+
+		&.active {
+			background-color: $selected-button;
+			cursor: inherit;
+		}
+	}
+	
+	&__content {
+		display: none;
+
+		&.active {
+			display: block;
+			margin: 20px 0;
+		}
+	}
+}

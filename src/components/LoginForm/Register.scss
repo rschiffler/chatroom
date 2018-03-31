@@ -1,0 +1,32 @@
+@import '../../css/base.scss';
+
+.Register {
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    &__form-group {
+        &--50,
+        &--100 {
+            margin: 20px 0;
+        }
+        
+        &--50 {
+            input {
+                width: calc(50% - 10px);
+                box-sizing: border-box;
+                margin-right: 20px;
+            }
+            input:last-of-type{
+                margin-right: 0;
+            }
+        }
+
+        &--100 {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
