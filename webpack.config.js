@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
 	entry: './src/index.js',
@@ -33,5 +34,11 @@ module.exports = {
 		host: 'localhost',
 		port: 9000,
 		open: true
-	}
+	},
+	plugins: [
+		new StyleLintPlugin({
+			syntax: 'scss',
+			failOnError: false
+		})
+	]
 }

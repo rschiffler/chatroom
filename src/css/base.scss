@@ -51,6 +51,12 @@ input {
 	height: 50px;
 }
 
+input[type=submit] {
+	cursor: pointer;
+	background-color: $selected-button;
+	border: none;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(132, 145, 150);
 	opacity: 1; /* Firefox */
