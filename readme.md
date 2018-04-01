@@ -1,5 +1,5 @@
 This project has the following technologies:<br>
-`react` `sass` `webpack` `redux`
+`react` `sass` `webpack` `redux` `stylelint`
 
 ## Running the application
 
@@ -20,6 +20,7 @@ The page will reload if you make edits.
 
 1. Add a browser prefix plugin
 1. Add a javascript testing framework
+1. Unit test reducers & actions?
 1. Build a production ready copy of the code
 1. Build a lightweight deployment pipeline
 1. Standardise font sizes

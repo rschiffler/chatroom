@@ -33,7 +33,8 @@ module.exports = {
 		publicPath: '/scripts/',
 		host: 'localhost',
 		port: 9000,
-		open: true
+		open: true,
+		historyApiFallback: true
 	},
 	plugins: [
 		new StyleLintPlugin({
