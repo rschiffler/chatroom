@@ -1,37 +1,39 @@
 @import "../../css/base.scss";
 
 .MessageBox {
+	$inputHeight: 41px;
+
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	height: auto;
-	background-color: $white;
-	border-top: solid 1px $light-gray;
+	border-top: solid 1px rgba($unselected-button, 0.9);
 	padding: 10px;
 
 	label {
 		float: left;
-		line-height: 41px;
-		height: 41px;
+		line-height: $inputHeight;
+		height: $inputHeight;
 		width: 20%;
 		box-sizing: border-box;
 	}
 
 	input[type=text] {
 		width: 60%;
-		height: 41px;
-		line-height: 41px;
+		height: $inputHeight;
+		line-height: $inputHeight;
 		box-sizing: border-box;
 		font-size: 16px;
+		vertical-align: bottom;
 	}
 
 	input[type=submit] {
 		width: 20%;
+		height: $inputHeight;
 		box-sizing: border-box;
 		padding: 13px 15px;
-    background: $light-gray;
-    border: 0 none;
-    cursor: pointer;
+    	border: 0 none;
+    	cursor: pointer;
 		border-radius: 0;
 		font-size: 16px;
 	}

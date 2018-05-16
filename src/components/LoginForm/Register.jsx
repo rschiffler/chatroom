@@ -5,6 +5,10 @@ import React from 'react';
 import styles from './Register.scss';
 
 export default class Register extends React.Component {
+	handleSubmit = () => {
+
+	}
+
 	render() {
 		return (
 			<div className="Register">
@@ -23,7 +27,7 @@ export default class Register extends React.Component {
 					<input className="Register__input" required type="text" placeholder="Confirm password" />
 				</div>
 				<div className="Register__form-group--100">
-					<input className="Register__input" type="submit" value="Sign up" />
+					<input className="Register__input" type="submit" onsubmit={this.handleSubmit} value="Sign up" />
 				</div>
             </div>
 		)

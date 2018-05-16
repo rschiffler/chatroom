@@ -5,10 +5,13 @@ import { addMessage } from '../../actions/actions'
 import styles from './MessageBox.scss';
 
 export default class MessageBox extends React.Component {
-	handleSubmit = (event) => {
-		event.preventDefault();
-		this.props.store.dispatch(addMessage(event.target.querySelector('input[type=text]').value));
-		event.target.querySelector('input[type=text]').value = '';
+	handleSubmit = (e) => {
+		e.preventDefault();
+		const message = event.target.querySelector('input[type=text]').value;
+		if(message && message.length > 0) {
+			this.props.store.dispatch(addMessage(message));
+			event.target.querySelector('input[type=text]').value = '';
+		}
 	}
 
 	render() {

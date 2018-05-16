@@ -8,6 +8,11 @@
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	background-color: $background;
 	color: white;
+	box-sizing: border-box;
+}
+
+div {
+	box-sizing: border-box;
 }
 
 h1 {
