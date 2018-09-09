@@ -15,7 +15,7 @@ export default class MessageBox extends React.Component {
 		return (
 			<div className="MessageBox">
 				<form onSubmit={this.handleSubmit}>
-					<label htmlFor="message">Enter message: </label>
+					<label htmlFor="message">Please enter your message: </label>
 					<input type="text" id="message" name="message" />
 					<input type="submit" text="Submit" />
 				</form>
